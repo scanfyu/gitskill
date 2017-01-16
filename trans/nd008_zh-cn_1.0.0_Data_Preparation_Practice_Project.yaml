@@ -2,7 +2,7 @@ id: 215511
 key: 475e82a0-785e-4f8e-97a8-1dd9bca10f24
 locale: zh-cn
 version: 1.0.0
-title: Practice Project
+title: 实践项目
 semantic_type: Lesson
 updated_at: 'Fri Nov 18 2016 06:07:34 GMT+0000 (UTC)'
 is_public: true
@@ -25,7 +25,7 @@ concepts:
     key: d1475899-056d-4064-b759-d7a5f2ecc41c
     locale: zh-cn
     version: 1.0.0
-    title: Practice Project Intro
+    title: 实践项目介绍
     semantic_type: Concept
     updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
     is_public: true
@@ -37,25 +37,25 @@ concepts:
         key: c0c09719-3f09-4732-afbb-5782c4f44f74
         locale: zh-cn
         version: 1.0.0
-        title: Note from the Hosts
+        title: 来自课程老师的贴士
         semantic_type: TextAtom
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
         text: |-
-          ## Note from your program hosts
+          ## 来自课程老师的贴士
 
-          Hello there! Sam here (remember, one of your hosts). This next section includes a practice project that can help you assess how ready you are for the actual project that you will submit for review. Rather than submitting this project, you can self assess by looking at a sample solution, a solution Alteryx workflow, and/or a detailed walk-through. Do your best to do it on your own, but don't hesitate to use the resources provided when you get stuck. 
+          大家好！这里是Sam（记住，你的老师之一）。下一节包括一个练习项目，可以帮助您评估将要提交审核的实际项目的准备情况。这里不单单可以提交这个项目，您可以通过查看解决方案样例：一个Alteryx解决方案工作流程和/或详细的工作过程。
 
-          Good luck!
+          祝你好运!
 
-          Sam and Mark
+          山姆和马克
         instructor_notes: ''
         resources: null
   - id: 215188
     key: 7ca73747-b3f5-4306-a6fc-422ea46acc45
     locale: zh-cn
     version: 1.0.0
-    title: Practice Project Details
+    title: 实践课程详情
     semantic_type: Concept
     updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
     is_public: true
@@ -80,44 +80,44 @@ concepts:
         key: 47db2144-3cf5-4535-8eed-e0eed32c4ebb
         locale: zh-cn
         version: 1.0.0
-        title: Project Description
+        title: 项目介绍
         semantic_type: TextAtom
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
         text: |
-          ## Practice Project 2.1 - Preparing School Data
-          As always, we start with the Problem Solving Framework
+          ## 实践项目2.1 - 准备学校数据
+          如往常一样，我们从问题解决框架开始
 
-          #### Business Understanding
-          A school district wants to predict the per pupil costs of a school based on some high level summary data about the school. This way they’ll have a good estimation of how well a school is managing its costs relative to what the model would predict. You’ve been asked to to prepare the data for modelling.
-          #### Data Understanding
-          You’ve been given four CSV files that contain data for two different school districts. You can find these files at the bottom of the page.
+          #### 商业问题理解
+          学区希望通过一些有关学校的高度精简的数据集来预测学校中每个学生的费用。 通过这样一个模型的预测，学校将可以对相对成本的管理有一个较好的估计。 您被要求完成相关模型的数据准备工作。
+          #### 数据理解
+          这几份CSV文件中包含了两个不同校区之间的数据。你可以在本页底部找到这些文件。
 
-          * DistrictA_Attendance - This file contains average daily attendance, percent attendance, and pupil-teacher ratio data for the 25 schools in district A.
-          * DistrictA_Finance - This file contains average monthly teacher salary and per pupil cost data for the 25 schools in district A.
-          * DistrictB_Attendance - This file contains average daily attendance, percent attendance, and pupil-teacher ratio data for the 21 schools in district B.
-          * DistrictB_Finance - This file contains average monthly teacher salary and per pupil cost data for the 21 schools in district B.
+          * DistrictA_Attendance - 该文件包含A区25所学校的平均每日出勤率，出勤百分比和学生-教师比。
+          * DistrictA_Finance - 该文件包含A区25所学校的教师月薪以及学生平均成本数据。
+          * DistrictB_Attendance - 该文件包含了B区21所学校的平均日出勤率，出勤半分比以及学生-教师百分比数据。
+          * DistrictB_Finance - 该文件包含了B区21所学校的教师平均工资和学生的平均成本数据。
 
-          #### Data Preparation
+          #### 数据准备
 
-          ##### Step 1: Combine the data
-          First you’ll need to combine the data from the various files into one sheet, with one row per school. To do this, you’ll use the skills you learned in the Formatting Data and Blending Data lessons. 
+          ##### 第一步：整合数据
+          第一步，你需要将来自不同文件的数据合并为一个工作表-每个学校一行。为此，你需要使用在数据形式化和数据混合课程中所学到的技能。
 
-          ##### Step 2: Clean the Data
-          Next you’ll clean the data, which includes addressing duplicate data, missing data, and any other data issues. To do this, you’ll use the skills you learned in the Data Issues lesson.
+          ##### 第二布：清理数据
+          下一步，你将要清理数据，这包括了处理重复数据、丢失数据以及其他数据问题。为此，你需要使用在数据问题课程中所学到的技能
 
-          ##### Step 3: Identify and Deal with Outliers
-          Lastly, you’ll look for outliers and determine the best way to address them. To do this, you’ll use the skills you learned in the Data Issues lesson.
+          ##### 第三步：识别并处理异常值
+          最后，你将要查找异常值，并确定解决它们的办法。为此，你需要使用你在数据问题课程中所学到的技能。
 
-          ### Self-Assessment 
-          Do your best to complete the practice project on your own. Once you are done, or get stuck, take a look at the solution. We’ve provided the solution dataset, Alteryx workflow, as well as a walk through of how to complete the project. There's not necessarily one perfectly right answer.
+          ### 自我评估
+          尽你自己全力来完成该实践项目。一旦你做完了，或者卡住了看一看解决方案。我们提供了解决方案数据集、 Alteryx 工作集，以及如何完成该项目的步骤。这里并没有一个最为完美的答案。
         instructor_notes: ''
         resources: null
   - id: 215189
     key: ab612688-3f13-44a2-9a21-825960c28483
     locale: zh-cn
     version: 1.0.0
-    title: Practice Project Solution
+    title: 项目解决方案
     semantic_type: Concept
     updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
     is_public: true
@@ -140,27 +140,27 @@ concepts:
         key: 5143054c-88de-447e-a404-6ba982bd9bfc
         locale: zh-cn
         version: 1.0.0
-        title: Solution
+        title: 方案
         semantic_type: TextAtom
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
         text: |-
-          ### Resources for Self Assessment
+          ### 自我评估资源
 
-          You have three resources to assess how you did on the practice project and how ready you are for a project you will submit.
+          你有三个资源来评估你在实践项目中的表现，以及你将要提交的项目作业的准备情况。
 
-          ##### Solution Dataset
-          At the bottom of the page you will see the **Cleaned School Data** file. There are a few judgement calls to make on regarding outliers and missing data, so your solution may look a little different. Take a look and compare to your cleaned dataset.
-
-          ##### Alteryx Solution Workflow
-          At the bottom of the page you will see an Alteryx workflow that provides a sample solution. You're solution may not look exactly the same. Take a look at the workflow to see how I approached it. You can also see a snapshot of the workflow below. Don't worry, it's not as complicated as it looks.
+          ##### 解决方案数据集
+          在本页底部，你将看到 **清理后学校数据** 文件。 这里有少量的判断调用来处理相关的异常值和缺失值，因此，你的解决方案看起来可能会有所不同。观察一下，并同你清理过的数据集进行比较。
+          
+          ##### Alteryx 解决工作流程
+          在本页底部，你将会看到一个 Alteryx 工作流程，它提供了一个示例解决方案。你的方案可能看起来和它不完全一样。参考一下我们制作的解决方案看看我们是如何达成这个方案的。你也可以看一下底部工作流的快照。别担心，它并不复杂。
         instructor_notes: ''
         resources: null
       - id: 214025
         key: a35dc6d3-570f-4028-a726-9defe3b2cfb4
         locale: zh-cn
         version: 1.0.0
-        title: Snapshot
+        title: 快照
         semantic_type: ImageAtom
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
@@ -174,21 +174,21 @@ concepts:
         key: 3c8b95a3-9eb1-4308-b22e-987262e40789
         locale: zh-cn
         version: 1.0.0
-        title: walkthrough
+        title: 实现路径
         semantic_type: TextAtom
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
         text: |-
-          ##### Detailed Walkthrough
+          ##### 详细实现路径
 
-          See the next for a more detailed walk through on the process. You learn how to learn the Score tool, which makes applying the model results much easier.
+          请看下一页-它提供了一个更加的详细的过程。你可以学习如何使用评分工具，这将使得模型结果的应用更加简便。
         instructor_notes: ''
         resources: null
   - id: 215190
     key: 7c8f1fff-f8f4-4b04-9c34-753f0b226a1f
     locale: zh-cn
     version: 1.0.0
-    title: Data Understanding
+    title: 数据理解
     semantic_type: Concept
     updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
     is_public: true
@@ -213,9 +213,9 @@ concepts:
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
         text: |-
-          ### Data Understanding
+          ### 数据理解
 
-          To begin, let’s take a look at the data. The data is in four different csv files, which we’ll have to combine in order to do the analysis. 
+          首先，让我们来看看数据。数据是4个不同的csv文件，我们必须将他们结合起来以便于分析。
         instructor_notes: ''
         resources: null
       - id: 214028
@@ -240,7 +240,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
-        text: 'To import, we’ll bring in four input tools, each one bringing in one of the files. There are two files for each district: an attendance file and a finance file. '
+        text: '导入时，我们将引入导入工具，每个输入工具代入其中一个文件。每个区域将有两个文件：考勤文件（attendance file）和财务文件（finance file）。 '
         instructor_notes: ''
         resources: null
       - id: 214030
@@ -265,7 +265,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
-        text: 'Starting with District A’s attendance file, we one record for each school, and there are three numeric fields, average attendance, percent attendance, and pupil teacher ratio.'
+        text: '从A区的考勤文件开始，每一个记录对应一个学校，这里有三个数字字段：平均出勤率、出勤率和学生-教师比。'
         instructor_notes: ''
         resources: null
       - id: 214032
@@ -290,7 +290,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
-        text: District A’s finance tab is structured differently. It has multiple rows for each school because the numeric fields are stacked on top of each other. So this data will have to be transformed before we can merge it with the attendance data.
+        text: A区的财务标签格式互不相同。每个学校有多行，这是由于数字字段堆叠在彼此的顶部。
         instructor_notes: ''
         resources: null
       - id: 214034
