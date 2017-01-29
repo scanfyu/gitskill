@@ -491,7 +491,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
-        text: 'This is good time to rename variables, since the variable names are pretty long. To do this, bring in a select tool. I’ve changed the names to ATT, PATT, PTR, SAL, and PPC. Let’s attached a browse tool and take a look at what we’ve got. Now the data is looks like it''s in good format for analysis and modeling.'
+        text: '由于变量名都很长，因而这是重命名变量的一个好时机。为此，先加入一个选择工具。我已经把名字改为ATT、PATT、PTR、SAL和PPC。让我们加上一个浏览工具看一看我们得到了什么。现在的数据格式看起来很适合分析和建模。'
         instructor_notes: ''
         resources: null
       - id: 214047
@@ -516,14 +516,14 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
-        text: 'Many analysts at this point will output the dataset to make future data cleaning go a bit faster. In this case, it''s not as important because we don''t have a lot of data. But imagine doing this on datasets with millions of records; run time can take a long time.'
+        text: '许多分析师此刻将会把数据集输出，未来的数据清理时会更快一点。在本例中，因为我们没有那么多数据因而不那么重要。但是，想象一下有数百万记录的数据集，单单运行它就需要花费大量时间。'
         instructor_notes: ''
         resources: null
   - id: 215192
     key: 2131fac6-a776-42e9-9e5d-0cf322a6ce0b
     locale: zh-cn
     version: 1.0.0
-    title: Data Cleaning
+    title: 数据清理
     semantic_type: Concept
     updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
     is_public: true
@@ -550,8 +550,8 @@ concepts:
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
         text: |-
-          ### Cleaning Data 
-          Now let’s check for data issues. Specifically, let’s look for duplicates and missing data first.
+          ### 数据清理
+          现在，让我们检查一下数据问题。具体来说，让我们首先来看一下重复和丢失数据。
 
           #### Visualizing with the Field Summary Tool
           Visualizing the data is a good way of doing this. The field summary report gives a few reports that are helpful. Looking at histograms of each variable is a good way to do this.
