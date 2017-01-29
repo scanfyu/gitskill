@@ -553,8 +553,8 @@ concepts:
           ### 数据清理
           现在，让我们检查一下数据问题。具体来说，让我们首先来看一下重复和丢失数据。
 
-          #### Visualizing with the Field Summary Tool
-          Visualizing the data is a good way of doing this. The field summary report gives a few reports that are helpful. Looking at histograms of each variable is a good way to do this.
+          #### 使用字段摘要以可视化
+          可视化数据是一个很好的方法。字段摘要报告提供了几个有用的报告。查看每个变量的直方图将会是一个很好的方法。
         instructor_notes: ''
         resources: null
       - id: 214050
@@ -594,9 +594,9 @@ concepts:
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
         text: |-
-          #### Duplicate Data
+          #### 重复数据
 
-          First, we see a potential duplicate because there’s one school with two records. Let’s take a look at the observations to confirm. All the data is the same for these two records, so it appears to be a duplicate. So let’s delete one of the observations. 
+          首先，我们看到一个潜在的重复数据，因为一个学校有了两个记录。让我们观察一下来确认是否重复。两个记录的所有数据都是相同的，因此它看起来是重复的。所以，让我们来删除一个观察值。 
 
           There are several ways to do this. An easy way is to use the select records tool. The record we want to delete is number 39, so in the configuration window of the select records tool, we can select 1-38 and everything 40 and after.
         instructor_notes: ''
