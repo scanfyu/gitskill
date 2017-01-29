@@ -315,14 +315,14 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
-        text: District B’s two datasets are structured similarly.
+        text: B区的两个数据集结构类似。
         instructor_notes: ''
         resources: null
   - id: 215191
     key: adfabd00-1a3f-46fc-96a7-b2e7cce2da52
     locale: zh-cn
     version: 1.0.0
-    title: Data Formatting and Blending
+    title: 结构化数据与数据混合
     semantic_type: Concept
     updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
     is_public: true
@@ -351,16 +351,16 @@ concepts:
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
         text: |-
-          ### Formatting and Blending Data
+          ### 数据格式化与数据混合
 
-          To build the dataset, we’ll have to merge each of these datasets into one. 
-          * First, we’ll have to transform the finance datasets
-          * Then we’ll merge the finance and attendance datasets for each district
-          * And lastly we’ll combine  the data for the two districts together. 
+          为了建立数据集，我们将会把这些数据集合并成一个数据集。
+          * 首先，我们将转换财务数据集。
+          * 其次，我们将合并每个区的财务和考勤数据集。
+          * 并且，最后我们将把两个地区的数据合并起来。
 
-          #### Transforming with Crosstab
+          #### 使用Crosstab转换
 
-          To transform the finance datasets, connect a Crosstab tool it to each of the finance input tools. 
+          要转换财务数据集，请将Crosstab工具连接到每个财务输入工具。 
         instructor_notes: ''
         resources: null
       - id: 214037
@@ -385,7 +385,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
-        text: 'In the configuration window, select School as the group by value, metric as the column headers, and value for the Values for New Columns. This will format the data in the same way the attendance data is formatted. '
+        text: '在配置窗口中，选择School作为组值，量值作为列标题，并以此作为新列的值。这将以考勤数据格式相同的方式来对数据以格式化 '
         instructor_notes: ''
         resources: null
       - id: 214039
@@ -411,9 +411,9 @@ concepts:
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
         text: |-
-          ### Join
+          ### 连接
 
-          Next, bring in a join tool and connect both datasets. 
+          接下来，引入连接工具并连接这两个数据集。
         instructor_notes: ''
         resources: null
       - id: 214041
@@ -438,7 +438,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
-        text: 'In the configuration window, select the school variable in each of the datasets to join on. Then select the variables you want to keep. You can drop one of the school variables, but you should keep the 5 numeric variables. You’ll want to do the same for the other district.'
+        text: '在配置窗口中，选择加入每个数据集中的学校变量。然后，选择你想要保留的变量。你可以删除其中一个学校变量，但是你应该保留5个数字变量。你也会想为其他地区做同样的事情。'
         instructor_notes: ''
         resources: null
       - id: 214043
@@ -464,9 +464,9 @@ concepts:
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
         text: |-
-          ### Union
+          ### 连接
 
-          Next, bring in a union tool, which will stack the data on top of eachother. Since the datasets have the same variables, you don’t have to set any configurations. 
+          下一步，引入一个连接工具，这将会把数据堆叠在彼此的顶部。由于数据集具有相同的变量，因此您不必配置任何变量。 
         instructor_notes: ''
         resources: null
       - id: 214045
