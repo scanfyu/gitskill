@@ -598,7 +598,7 @@ concepts:
 
           首先，我们看到一个潜在的重复数据，因为一个学校有了两个记录。让我们观察一下来确认是否重复。两个记录的所有数据都是相同的，因此它看起来是重复的。所以，让我们来删除一个观察值。 
 
-          There are several ways to do this. An easy way is to use the select records tool. The record we want to delete is number 39, so in the configuration window of the select records tool, we can select 1-38 and everything 40 and after.
+          有几种方法可以做到这一点。一种简单的方法是使用选择记录工具。我们想要删除的记录是39，因此在配置窗口中使用选择记录工具，我们可以选择1-38和40以后的所有。
         instructor_notes: ''
         resources: null
       - id: 214053
@@ -623,7 +623,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
-        text: 'The record we want to delete is number 39, so in the configuration window of the select records tool, we can select 1-38 and everything 40 and after.'
+        text: '我们要删除的记录是39，因此在配置窗口选择记录工具，我们可以选择1-38和40之后的所有。'
         instructor_notes: ''
         resources: null
       - id: 214055
@@ -649,10 +649,10 @@ concepts:
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
         text: |-
-          #### Missing Data
-          You can see on the field summary report we are missing a few observations for the two attendance variables (the red underneath the histogram indicates this). We can either delete or impute. Since there are only a few, let’s delete the records, but we’ll make note of it, since we may come back to run the model with the data imputed, or if we end up not using those variables in the model.
+          #### 缺失数据
+          你可以看到字段摘要报告中我们所缺少的几个观察值-两个考勤变量（直方图下方红色标出）。我们可以删除或插补。因为数量较少，所以我们选择删除记录；但是我们会记录下它，因为我们可能会使用这些数据来运行模型，或者我们最终在模型中不使用这些数据。
 
-          An easy way to remove missing data is to use a filter tool.
+          一个简单的方法来删除缺失值是使用过滤器工具。
         instructor_notes: ''
         resources: null
       - id: 214057
@@ -677,7 +677,7 @@ concepts:
         semantic_type: TextAtom
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
-        text: 'In the configuration window, you can select the ATT variable, and filter out records that are NULL. To do this, you want to keep all records that are not NULL, so you can use the drop downs to select ATT Is Not Null, or type in the formula *!IsNull(ATT)*.'
+        text: '在配置窗口中，你可以选择ATT变量，并过滤掉值为空（NULL）的记录。为此，您将希望保留所有非空记录，所以，你可以使用下拉列表选择ATT为非空（Not NULL）或者键入公式 *!IsNull(ATT)。'
         instructor_notes: ''
         resources: null
       - id: 214059
@@ -698,7 +698,7 @@ concepts:
     key: d55bb021-9b56-47c2-8eb9-40b24e854d0c
     locale: zh-cn
     version: 1.0.0
-    title: Outliers
+    title: 异常值
     semantic_type: Concept
     updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
     is_public: true
@@ -715,11 +715,11 @@ concepts:
         updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
         is_public: true
         text: |+
-          ### Identifying and dealing with outliers
+          ### 识别并处理异常值
 
-          *We are working on providing more detail to this sections. In the meantime, here's an overview.*
+          *在以后的部分中我们会提供更多的细节。这里，我们将简单概述。*
 
-          To check for outliers, let’s start with some scatterplots to visualize the relationship between each predictor variable and the target variable. Since there are four predictor variables, let’s drag in four scatterplot tools, and connect them to the cleaned dataset. Then we configure each one with a different predictor variable, attached browse tools, and run the workflow.
+          让我们从一些将预测变量和目标变量的关系来刻画散点图以检查异常值。由于有4
 
           Let’s start with attendance. The box and whisker plots on either axis use the interquartile range to determine whether a point is an outlier. You can see hear there are two dramatic outliers for attendance, so let’s address those first, then come back to the others.. If you need a quick refresher on what to do with outliers, take a look at the notes below the video. 
 
