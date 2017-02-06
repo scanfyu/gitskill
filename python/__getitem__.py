@@ -9,7 +9,7 @@ class Fib(object):
             start = n.start
             stop = n.stop
             if start is None:
-                start = 0
+                start = 0 
             a, b = 1, 1
             L = []
             for x in range(stop):
