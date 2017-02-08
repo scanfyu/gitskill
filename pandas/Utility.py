@@ -15,10 +15,13 @@ def get_data(symbols, dates):
         symbols.insert(0, 'SPY')
 
     for symbol in symbols:
-        def_temp = pd.read.csv(symbol_to_path(symbol), index_col='Data',
-                    parse_dates=True, useTools=['Data', 'Adj Close'],nan_value=['nan'])
+        df_temp = pd.read_csv(symbol_to_path(symbol), index_col='Date',
+                    parse_dates=True, usecols=['Date', 'Adj Close'], na_values=['nan'])
+        df_temp = df_temp.rename(columns = {'Adj Close': symbol})
+        df = df.join(df_temp)
+        if symbol == 'SPY': #drop datas SPY did not trade
+            df = df.dropna(subset=["SPY"])
         # TODO: Read and join data for each symbol
-
     return df
 
 
