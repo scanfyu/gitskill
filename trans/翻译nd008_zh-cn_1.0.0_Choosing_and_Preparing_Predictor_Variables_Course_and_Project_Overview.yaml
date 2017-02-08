@@ -1,0 +1,54 @@
+id: 215513
+key: bf568166-10bc-41ba-9cfd-789ec295bf07
+locale: zh-cn
+version: 1.0.0
+title: Course and Project Overview
+semantic_type: Lesson
+updated_at: 'Fri Nov 18 2016 06:07:34 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: ''
+duration: 15
+is_project_lesson: false
+_concepts_ids:
+  - 215197
+_project_id: null
+concepts:
+  - id: 215197
+    key: 4d9cfcc9-1d0b-4ef1-af64-6ed824d09555
+    locale: zh-cn
+    version: 1.0.0
+    title: 回顾
+    semantic_type: Concept
+    updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 214066
+    atoms:
+      - id: 214066
+        key: 52ec0ae0-5d23-436f-b6d3-ec8f282443e3
+        locale: zh-cn
+        version: 1.0.0
+        title: 回顾
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          # 回顾
+
+          在前边的课程中，你已经从Maureen学到了如何思考你的数据、清理数据和处理异常值。在下一个课程中，我们将向您介绍Alteryx的Ben，你将会在** 分类模型 **课程中看到他。Ben是一个很棒的人，他会接替Maureen，并帮助你探索如何:
+
+          1. 为你的回归模型选择合适的预测变量.
+          2. 查看变量之间的相关性，为您的模型选择最佳的预测变量.
+          3. 处理空值* Null *，深入理解如何准备模型分类变量.
+
+          本课程将帮助您处理在项目2.2中需要考虑的诸多变量.
+
+          # 项目
+
+           随意调到前面的 [项目](https://classroom.udacity.com/nanodegrees/nd008/parts/11a7bf4c-2b69-47f3-9aec-108ce847f855/modules/53b988a5-d3a9-4f35-9298-c6a51e2815b2/lessons/3a5e7867-6aa7-49a9-95b6-e2f65dd6de82/concepts/4863f554-f6fc-4cd1-9512-292ca84f80be#) 如果你已经知道这些概念了.
+
+        instructor_notes: ''
+        resources: null
