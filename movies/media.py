@@ -7,5 +7,5 @@ class Movie():
         self.poster_image_url = poster_image
         self.trailer_youku_url = trailer_youku
 
-class show_trailer(self):
-    webbrowser.open(self.trailer_youku_url)
+    def show_trailer(self):
+        webbrowser.open(self.trailer_youku_url)
