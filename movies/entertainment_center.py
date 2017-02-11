@@ -1,6 +1,6 @@
 #-*- coding: UTF-8 -*- 
 
-import fresh_tomatoes
+#import fresh_tomatoes
 import media
 
 toy_story = media.Movie("firefighter",
@@ -25,4 +25,6 @@ transformers = media.Movie("tansformers",
                            "http://v.youku.com/v_show/id_XMjQ5NjAzNjYyOA==.html")
 
 movies = [toy_story, avatar, transformers]
-fresh_tomatoes.open_movies_page(movies)
+#fresh_tomatoes.open_movies_page(movies)
+#print(media.Movie.Valid_ratings)
+print(media.Movie.__doc__) # 打印说明文档
