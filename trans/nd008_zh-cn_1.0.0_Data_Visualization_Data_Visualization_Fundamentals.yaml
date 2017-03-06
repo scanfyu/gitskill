@@ -1,0 +1,946 @@
+id: 215528
+key: 8dfdec5c-9dce-4a38-8a23-073d1552abd2
+locale: zh-cn
+version: 1.0.0
+title: 数据可视化基础
+semantic_type: Lesson
+updated_at: 'Tue Jan 03 2017 00:10:43 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: 在这里，您将了解我们为什么使用数据可视化以及创建它们的基础知识。
+duration: 60
+is_project_lesson: false
+_concepts_ids:
+  - 215359
+  - 215360
+  - 215361
+  - 215362
+  - 215363
+  - 215364
+_project_id: null
+concepts:
+  - id: 215359
+    key: a1288550-f701-4b6f-b45b-a6bf23b78a28
+    locale: zh-cn
+    version: 1.0.0
+    title: Data viz intro
+    semantic_type: Concept
+    updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 214372
+    atoms:
+      - id: 214372
+        key: 790456b0-49c5-4fff-ab29-62153c07dc6b
+        locale: zh-cn
+        version: 1.0.0
+        title: Data viz Intro
+        semantic_type: VideoAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          youtube_id: MUZXLvBI2sw
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/October/57f7ed6f_nd008-ud1006-l1-intro/nd008-ud1006-l1-intro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/October/57f7ed6f_nd008-ud1006-l1-intro/nd008-ud1006-l1-intro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/October/57f7ed6f_nd008-ud1006-l1-intro/nd008-ud1006-l1-intro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/October/57f7ed6f_nd008-ud1006-l1-intro/nd008-ud1006-l1-intro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/October/57f7ed6f_nd008-ud1006-l1-intro/hls/playlist.m3u8'
+  - id: 215360
+    key: 649704b0-e177-47f2-8265-67f9be75af51
+    locale: zh-cn
+    version: 1.0.0
+    title: 为什么要使用数据可视化？
+    semantic_type: Concept
+    updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 214373
+      - 214374
+      - 214375
+      - 214376
+      - 214377
+      - 214378
+      - 214379
+      - 214380
+      - 214381
+      - 214382
+      - 214383
+      - 214384
+    atoms:
+      - id: 214373
+        key: d766c539-d159-4fbf-a1e8-7f02d34e0fbc
+        locale: zh-cn
+        version: 1.0.0
+        title: Text node 1
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: "### Ancombe's quartet\n\nWhy should we use data visualizations at all? Humans are much better at interpreting relationships in data when we can see them directly, instead of written out as a bunch of numbers in a table. Consider this set of data, called [Anscombe's Quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet):\n\n| I (x) | I (y) | II (x)| II (y) | III (x) | III (y) | IV (x) | IV (y) |\n| ------------- | ------------- |---|---|--|\n|10.0|8.04|10.0|9.14|10.0|7.46|8.0|6.58\n|8.0|6.95|8.0|8.14|8.0|6.77|8.0|5.76\n|13.0|7.58|\t13.0\t|8.74\t|13.0\t|12.74|8.0|7.71\n|9.0\t|8.81|9.0|8.77|\t9.0|\t7.11|\t8.0|\t8.84\n|11.0|8.33\t|11.0\t|9.26\t|11.0\t|7.81|\t8.0|\t8.47\n|14.0|9.96|\t14.0|\t8.10|\t14.0\t|8.84\t|8.0|\t7.04\n|6.0|7.24|6.0|\t6.13|\t6.0|6.08\t|8.0|5.25\n|4.0|4.26|4.0|\t3.10|\t4.0\t|5.39|\t19.0|\t12.50\n|12.0|10.84\t|12.0\t|9.13\t|12.0\t|8.15\t|8.0\t|5.56\n|7.0\t|4.82|7.0|7.26|7.0|6.42\t|8.0|7.91\n|5.0|\t5.68|\t5.0|\t4.74|\t5.0|\t5.73|\t8.0\t|6.89\n\nThere are four similar data sets here. Everything looks fine, just a bunch of numbers. Each data set, I through IV, has the same group statistics:\n\n| Property | Value|\n|-----|------|\n|**Mean** of *x* in each case | 9 (exact)\n|Sample **variance** of *x* in each case | 11 (exact)\n|**Mean** of *y* in each case | 7.5 (to 2 decimal places)\n|Sample **variance** of *y* in each case | 4.122 or 4.127 (to 3 decimal places)\n|**Correlation** between *x* and *y* in each case | 0.816 (to 3 decimal places)\n|**Linear regression** line in each case | 3.00 + 0.500*x (to 2 and 3 decimal places respectively)\n\nGoodness-of-fit measurements for the linear regression, such as R^2, are the same too. Just looking at the data, there isn't anything weird going on, except for set IV where x is the same for all but one point. However, check out what happens when the data is visualized:"
+        instructor_notes: ''
+        resources: null
+      - id: 214374
+        key: 267a62f1-52ac-48a0-86f2-dd52745959b3
+        locale: zh-cn
+        version: 1.0.0
+        title: Anscombe's quartet
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57af91bb_anscombes-quartet-3/anscombes-quartet-3.svg'
+        width: 990
+        height: 720
+        caption: 'Anscombe''s quartet visualized (https://commons.wikimedia.org/w/index.php?curid=9838454)'
+        resources: null
+        instructor_notes: null
+      - id: 214375
+        key: ccf6b961-52e5-4a88-a524-a6afa0f60047
+        locale: zh-cn
+        version: 1.0.0
+        title: 第二部分
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          现在数据绘制出来了，我们可以清楚地看到每个集合是完全不同的。 不仅集合不同，即使所有统计数据看起来很好，但线性趋势对于集合II、III和IV来说显然是错误的。 这是可视化的力量，它们揭示了从数据本身看不到的潜在关系。
+
+          作为另一个例子，考虑你在实际工作中可能看到的这个数据表。 这是各个部门之间每个分类目切分下的总利润：消费者、公司和家庭办公室。
+        instructor_notes: ''
+        resources: null
+      - id: 214376
+        key: 4a8bd9a2-ed0c-4bd6-ac26-71c1d2ea0076
+        locale: zh-cn
+        version: 1.0.0
+        title: 利润表
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57af974c_visual1/visual1.png'
+        width: 359
+        height: 408
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214377
+        key: 9de6f817-318c-479f-8192-97e0b9c429a0
+        locale: zh-cn
+        version: 1.0.0
+        title: 添加颜色
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: '当这里有一些模型或相关性的话，在数值互相比较时是有一些难以理解的。我们可以增加一些颜色以使得损失更加明显。'
+        instructor_notes: ''
+        resources: null
+      - id: 214378
+        key: c2f49f40-e948-4aed-8497-2d26940472ba
+        locale: zh-cn
+        version: 1.0.0
+        title: 添加颜色!
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57af979d_visual3/visual3.png'
+        width: 364
+        height: 412
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214379
+        key: 74222c92-b21c-4a64-b85f-edfbe893d368
+        locale: zh-cn
+        version: 1.0.0
+        title: 条形图!
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: '这有一些帮助，但仍难以看出类别间是如何比较的。如果这些值通过条形长度来显示，则关系立即变得明显起来。'
+        instructor_notes: ''
+        resources: null
+      - id: 214380
+        key: 46a9d0a4-c578-43fa-9425-3b88ae5b5717
+        locale: zh-cn
+        version: 1.0.0
+        title: 通过条形来编码利润
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57af97cd_visual4/visual4.png'
+        width: 1660
+        height: 509
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214381
+        key: 0f28a2e7-e1b0-4367-85e9-9e0554a22aff
+        locale: zh-cn
+        version: 1.0.0
+        title: 大结局
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: 现在，你可以很容易地看到一堆模式。复印机持续的拥有最高利润。家庭办公室则在三个部门中利润最低。
+        instructor_notes: ''
+        resources: null
+      - id: 214382
+        key: bbed3fa4-5686-4373-98a7-91886af27acf
+        locale: zh-cn
+        version: 1.0.0
+        title: 一图胜千言
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### 一图胜千言
+
+          可视化的另一个方面是，你可以把一堆数字打包放到一小块面积（物理）区域中。考虑下我有多少数据点适合这一图表。
+        instructor_notes: ''
+        resources: null
+      - id: 214383
+        key: ad334089-32a1-496f-8d72-1e012c94222e
+        locale: zh-cn
+        version: 1.0.0
+        title: 小倍数
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57afabf3_small-multiples-example/small-multiples-example.png'
+        width: 2254
+        height: 904
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214384
+        key: 24bdb48a-341a-46b7-8622-c80dbe1694a9
+        locale: zh-cn
+        version: 1.0.0
+        title: 小多组图的数据描述
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          在这里，我绘制了从2011年1月到2014年12月中每个月的总利润。我还包括每个组的平均月利润。
+
+          对于每组，4年中每月有一个数据点。这里有9组，即48 * 9 = 432个数据点。 加上9个利润平均数，在这个部分中总共有** 441 **个数据。 看看这个几乎无法理解的有 441 个数字的表，但这个图很容易地帮助我们了解利润随时间的变化情况。
+        instructor_notes: ''
+        resources: null
+  - id: 215361
+    key: 123f5a64-7a28-4b83-afbb-5817dd39f1de
+    locale: zh-cn
+    version: 1.0.0
+    title: Data types
+    semantic_type: Concept
+    updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 214385
+      - 214386
+      - 214387
+      - 214388
+      - 214389
+      - 214390
+      - 214391
+      - 214392
+    atoms:
+      - id: 214385
+        key: c07cbafd-be7d-462a-a967-78cf4b090fc0
+        locale: zh-cn
+        version: 1.0.0
+        title: Data types part 1
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Before you get to creating visualizations, you’ll need to understand the different types of data you’ll be working with. There are two main types, quantitative and qualitative.
+
+          ### Quantitative
+
+          Quantitative data are things you measure as numbers such as temperature, money, and the number of scratches from your cat. You can split quantitative data into two groups, continuous and discrete. **Discrete** data can take on only certain values. For example the number of items sold in a transaction can only be positive whole numbers, you can’t buy 2.5 pillows. (or 2.5 cats!)
+
+          Continuous data can take on any value within some range, like time, height or money.
+
+          ### Qualitative
+          Qualitative data is descriptive information about things that can't be quantified with numbers, like male/female and hair color. These are **categorical** data, data that indicates belonging to a category or group. Often you'll want to group your data by the categories and compare them.
+
+          You also have **ordinal** data, things like rankings and subjective scales you'd see in surveys, such as "How do you feel about tacos?"
+
+          1. gross!
+          2. ew
+          3. okay
+          4. good
+          5. delicious! 
+
+          You'll sometimes see ordinal data numbered, 1 to 5, but the numbers don't really mean anything.
+
+          These are the typical data types you'll see. You could be working with things like images or text which might not seem to fit in these categories. But most of the time, you can convert these into numbers or categories.
+        instructor_notes: ''
+        resources: null
+      - id: 214386
+        key: c5a7abbd-66b2-4922-a075-3521a9549495
+        locale: zh-cn
+        version: 1.0.0
+        title: Data types examples
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## Here is a summary so far
+
+          * Quantitative
+              * Continuous
+                  * time, height, weight, money, interest rates, temperature
+              * Discrete
+                  * units sold, number of languages spoken, number of emails you received yesterday
+          * Qualitative
+              * Categorical
+                  * gender, hair color, country, industry, cat breed
+              * Ordinal
+                  * Rankings, survey questions like “How do you feel about cats?"
+                       1. hate them
+                       2. negative
+                       3. neutral
+                       4. positive
+                       5. love them with all my being
+        instructor_notes: ''
+        resources: null
+      - id: 214387
+        key: eaa8ccdf-04ab-4728-bef0-20926ca3df34
+        locale: zh-cn
+        version: 1.0.0
+        title: Flowchart
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: Below is a flowchart to help you figure out what kind of data type your data is classified as.
+        instructor_notes: ''
+        resources: null
+      - id: 214388
+        key: 869461d9-2e65-44b5-8e39-701432bfde30
+        locale: zh-cn
+        version: 1.0.0
+        title: Data types flowchart
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b23dc5_flowchart.001/flowchart.001.png'
+        width: 1024
+        height: 768
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214389
+        key: dddb2ba8-5992-4c37-bdab-866ff9417129
+        locale: zh-cn
+        version: 1.0.0
+        title: Data types exercise
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: "### Identify correct data types\n\nCheck out this example dataset:\n\n|Survey|\tHeight (cm)|\tSex|\tScratches (cat)\n|----|----|----|----|----|\n|1|\t173.57|\t\tF|\t1|\n|5\t|199.13\t\t|M|\t0|\n|4|\t186.41|\t\tM|\t1|\n|2\t|169.98\t\t|F\t|3|\n|4|\t164.39|\tF |2|\n|3\t|170.67\t\t|M\t|5|\n"
+        instructor_notes: ''
+        resources: null
+      - id: 214390
+        key: 8ea63a61-ee0c-4e12-a52e-3a1d4729216a
+        locale: zh-cn
+        version: 1.0.0
+        title: '"Sex" data type'
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Which data type is the **sex** column?
+          correct_feedback: 'Good job! The **sex** column only contains *male* and *female* - qualitative, categorical data.'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1471299546924
+              text: Continuous
+              is_correct: false
+              incorrect_feedback: 'Nope! The sex column can only have two values, *male* or *female*, so it isn''t continuous.'
+            - id: a1471299547708
+              text: Ordinal
+              is_correct: false
+              incorrect_feedback: Nope! Ordinal data is something like survey ratings.
+            - id: a1471299548245
+              text: Categorical
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1471299548804
+              text: Discrete
+              is_correct: false
+              incorrect_feedback: 'While the **sex** column has only two values, they aren''t numbers. Discrete data is quantitative and numerical, just not taking any possible value.'
+      - id: 214391
+        key: 1261d9cd-a86d-4266-a3f6-6b0c773fcd20
+        locale: zh-cn
+        version: 1.0.0
+        title: Height data type
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Which data type is the **height** column?
+          correct_feedback: You're right! A person's height can take on any value (within certain ranges) so it is continuous data.
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1471300179622
+              text: Continuous
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1471300180318
+              text: Ordinal
+              is_correct: false
+              incorrect_feedback: 'Nope! Ordinal data might be encoded with numbers, but they are associated with qualitative measurements.'
+            - id: a1471300180853
+              text: Categorical
+              is_correct: false
+              incorrect_feedback: 'Nope! Categorical data is qualitative, things like hair color and country.'
+            - id: a1471300181389
+              text: Discrete
+              is_correct: false
+              incorrect_feedback: 'Height can take on any value, so it isn''t discrete data which take only certain values.'
+      - id: 214392
+        key: 7ce81c2d-df89-44ff-ac6d-46ba6a26322f
+        locale: zh-cn
+        version: 1.0.0
+        title: Survey data type quiz
+        semantic_type: RadioQuizAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        question:
+          prompt: Which data type is the **survey** column?
+          correct_feedback: 'Right! Since this is survey data, it''s qualitative even though it''s recorded as numbers.'
+          video_feedback: null
+          default_feedback: null
+          answers:
+            - id: a1471300842679
+              text: Continuous
+              is_correct: false
+              incorrect_feedback: Nope! The **survey** data doesn't take on any value.
+            - id: a1471300844376
+              text: Ordinal
+              is_correct: true
+              incorrect_feedback: null
+            - id: a1471300844951
+              text: Categorical
+              is_correct: false
+              incorrect_feedback: 'The survey data is qualitative like categorical data, but it has some order (1 is less than 5 in some sense).'
+            - id: a1471300845592
+              text: Discrete
+              is_correct: false
+              incorrect_feedback: 'Nope! Even though the survey data is numbers and only take on the values 1 to 5, it is qualitative. The numbers are encoding responses like "neutral", "approve", "strongly approve".'
+  - id: 215362
+    key: f8b09a19-ea58-4e50-88a8-178f3ffac30e
+    locale: zh-cn
+    version: 1.0.0
+    title: Visual encodings
+    semantic_type: Concept
+    updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 214393
+      - 214394
+      - 214395
+      - 214396
+      - 214397
+      - 214398
+      - 214399
+      - 214400
+      - 214401
+      - 214402
+      - 214403
+      - 214404
+      - 214405
+      - 214406
+      - 214407
+    atoms:
+      - id: 214393
+        key: b00102cf-a6d7-43d7-804d-389fd018af1e
+        locale: zh-cn
+        version: 1.0.0
+        title: Visual encodings
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Representing data with visual elements
+
+          When you're visualizing data, you're using visual elements such as dots, lines, and bars to represent or *encode* numerical values. For example, if you're looking at the heights and weights of multiple people, you would use a single dot to encode the values of the height and weight of each individual.
+        instructor_notes: ''
+        resources: null
+      - id: 214394
+        key: 202989bd-e4c1-4bd7-bd1a-a3e88f194304
+        locale: zh-cn
+        version: 1.0.0
+        title: Dot encoding example
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b39a90_one-dot-example/one-dot-example.png'
+        width: 350
+        height: 280
+        caption: Encoding height and weight with dots
+        resources: null
+        instructor_notes: null
+      - id: 214395
+        key: 0d534919-a11a-455a-b886-97cd0fcc2fba
+        locale: zh-cn
+        version: 1.0.0
+        title: Part 2
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          You see two dots here, representing two individuals. The values of the weight and height are encoded by the *position of the dot* in the image, *relative to the markings* on the axes. The dot on the left has the value 70.0 kg for weight and about 1.72 m for height, as indicated by the dashed lines drawn from the dot to the axes.
+
+          ### Dots
+          For quantitative data, especially when comparing two variables, dots are preferred. Expanding the data in the above example, you can see how to represent more data.
+        instructor_notes: ''
+        resources: null
+      - id: 214396
+        key: a766acf8-b355-4532-aae2-a5691091165b
+        locale: zh-cn
+        version: 1.0.0
+        title: Many dots example
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b39d51_dot-example/dot-example.png'
+        width: 350
+        height: 280
+        caption: Representing many individuals with dots.
+        resources: null
+        instructor_notes: null
+      - id: 214397
+        key: 3fd6db46-3314-4101-8e26-9d2aef1a15bd
+        locale: zh-cn
+        version: 1.0.0
+        title: Text part 3
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Dots are the most accurate encoding, that is, humans are better at *identifying the value encoded by the dot* compared to other visual representations. It is simple to draw a line from the dot to the axis. Dots take little space on the image and make it easy to see the value encoded. Using lines or bars to encode this data makes it an absolute mess.
+
+          ### Lines
+          Lines are really good for connecting related data and guiding the eye. You want to use lines with sequences of continuous data like time, where dots alone don’t work. See this example of time data with just dots and compare it to the same plot, but with lines.
+        instructor_notes: ''
+        resources: null
+      - id: 214398
+        key: 88128b78-5b52-47da-b902-7c23af872512
+        locale: zh-cn
+        version: 1.0.0
+        title: Ice cream sales with dots
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b3a1ec_time-with-dots/time-with-dots.png'
+        width: 800
+        height: 350
+        caption: Ice cream sales encoded with dots
+        resources: null
+        instructor_notes: null
+      - id: 214399
+        key: 858bb913-1dca-4cf4-bc8f-865b0d738e57
+        locale: zh-cn
+        version: 1.0.0
+        title: Ice cream sales with lines
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b3a203_time-with-lines/time-with-lines.png'
+        width: 800
+        height: 350
+        caption: Ice cream sales encoded with lines!
+        resources: null
+        instructor_notes: null
+      - id: 214400
+        key: a6270d11-36d8-4a73-9320-8cdcf455178f
+        locale: zh-cn
+        version: 1.0.0
+        title: Lines part 2
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Using lines emphasizes the trend in the seasonal change of ice cream sales. Humans intuitively see lines as indicating trends, while dots signal that the data is unconnected.
+
+          Lines are also super effective when showing changes across groups. Edward Tufte introduced visualizations called [“slope graphs”](http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0003nk) that are excellent for showing a bunch of groups changing over time. If you're interested, here is [a great article](http://charliepark.org/slopegraphs/) on the history and use of slopegraphs.
+
+          Since humans see trends from lines, it's inappropriate to use lines when a trend doesn’t make sense, like this:
+        instructor_notes: ''
+        resources: null
+      - id: 214401
+        key: 1845598f-3150-4f18-a1f6-fe8c873cc8c9
+        locale: zh-cn
+        version: 1.0.0
+        title: Don't do this with lines
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b3a366_bad-lines-example/bad-lines-example.png'
+        width: 350
+        height: 245
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214402
+        key: 1fdb348e-6d6a-4f19-ad32-6a85221e69b9
+        locale: zh-cn
+        version: 1.0.0
+        title: Bars part 1
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### Bars
+
+          For something like the above graph where you are comparing groups, bars are excellent.
+        instructor_notes: ''
+        resources: null
+      - id: 214403
+        key: 3c39d7d1-4bcd-4919-bbde-5e5c913c891f
+        locale: zh-cn
+        version: 1.0.0
+        title: Do this instead
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b3a37b_good-bars-example/good-bars-example.png'
+        width: 350
+        height: 245
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214404
+        key: bd2d164b-2bb7-4787-801e-ffc36afa7cf9
+        locale: zh-cn
+        version: 1.0.0
+        title: Bars part 2
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          Bars are used to encode only one numerical value, indicated by the y-axis on the left here. They are useful when comparing groups (Furniture, Electronics, Supplies, Services). We're able to immediately see how the profit of each group compare to each other.
+
+          ### Color
+
+          Color is often used to encode a third dimension since it is really difficult to interpret three dimensional data on a two dimensional plane (like your computer screen). This can either be with continuous data like in heatmaps or discrete data when splitting data into groups.
+        instructor_notes: ''
+        resources: null
+      - id: 214405
+        key: 74bbe81e-b57d-4491-ac2d-d622dadc005b
+        locale: zh-cn
+        version: 1.0.0
+        title: Heatmap Color example
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/October/57f3d107_heatmap/heatmap.png'
+        width: 1200
+        height: 510
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214406
+        key: eed7f696-cb36-48b5-9dfc-77a7642a392d
+        locale: zh-cn
+        version: 1.0.0
+        title: Line Plot
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/October/57f3d276_line-plot-color-encoded/line-plot-color-encoded.png'
+        width: 1349
+        height: 862
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214407
+        key: 50424b60-c2e1-42bd-b153-c7a0586873ca
+        locale: zh-cn
+        version: 1.0.0
+        title: Finale
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: 'Stephen Few wrote a great article about visual encodings. It''s 8 pages long with lots of plots, so it will only take 10 or so minutes. [Give it a read](https://www.perceptualedge.com/articles/b-eye/encoding_values_in_graph.pdf).  If you stray from these representations, your readers will have trouble understanding you, it’s like talking to someone using the wrong words.'
+        instructor_notes: ''
+        resources: null
+  - id: 215363
+    key: 702a1465-e570-4120-bdeb-06c6eec93d19
+    locale: zh-cn
+    version: 1.0.0
+    title: Exploration vs Explanation
+    semantic_type: Concept
+    updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 214408
+      - 214409
+      - 214410
+      - 214411
+      - 214412
+      - 214413
+      - 214414
+      - 214415
+      - 214416
+      - 214417
+      - 214418
+      - 214419
+      - 214420
+      - 214421
+      - 214422
+    atoms:
+      - id: 214408
+        key: 3b5af5b8-cb45-4bae-bdbe-9835562ae8a0
+        locale: zh-cn
+        version: 1.0.0
+        title: Part 1
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          # The Data Analysis Process
+          Visualizing data comes in at two points during the analysis process: when you are exploring the data, and when you are explaining the data. Exploring involves digging through the data to find interesting relationships and questions. Explaining is when you present those relationships and answers to the questions. Here I’ve drawn out the typical process for working with data.
+        instructor_notes: ''
+        resources: null
+      - id: 214409
+        key: 61a605e6-0bfa-4108-99f3-82254dc93c6d
+        locale: zh-cn
+        version: 1.0.0
+        title: Data Analysis Process
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/October/57f3d7df_data-analysis-process/data-analysis-process.png'
+        width: 1389
+        height: 229
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214410
+        key: 3e33b5c8-3c11-46d1-a131-8cf0ccdc91e6
+        locale: zh-cn
+        version: 1.0.0
+        title: Part 2
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Extract and Clean
+          The first thing you do is **extract** the data from a database or parse it from records elsewhere. This is typically where you’ll be using something like SQL or collecting data from web pages, a process called web scraping.
+
+          Most of your time will be spent **cleaning** this data. Often, records will be missing, formatted wrong, or just don’t make sense. I’m not going to get into cleaning data in this course, but I’ll provide some resources for you.
+        instructor_notes: ''
+        resources: null
+      - id: 214411
+        key: ab3e0bd5-8a5f-47c9-96ce-37fdc9bed00f
+        locale: zh-cn
+        version: 1.0.0
+        title: Explore
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/October/57f3daa5_explore/explore.png'
+        width: 1389
+        height: 229
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214412
+        key: 4579f47f-79ad-4c23-af8a-029f322b9d7b
+        locale: zh-cn
+        version: 1.0.0
+        title: Part 3
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## Exploratory visualizations
+
+          Once the data’s in good shape, you’ll explore it to gain an understanding of the data. You’ll want to look at how data is distributed, if some variables are correlated, and how records are split between categories. This process is usually called EDA for exploratory data analysis.
+
+          Data visualization comes in handy here as you can plot out distributions of your data, and create things like scatter plots to reveal correlations. It’ll help you look for interesting patterns in the data, and other things that will help guide decisions.
+
+          ### Bar graphs
+
+          With things like categorical variables, you’ll want to look at how the data is distributed between the categories. Bar graphs are great here:
+        instructor_notes: ''
+        resources: null
+      - id: 214413
+        key: d14d919c-a4bd-4034-8cbc-b7124ccd2112
+        locale: zh-cn
+        version: 1.0.0
+        title: bar chart
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/October/57f3d926_bar-chart/bar-chart.png'
+        width: 700
+        height: 500
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214414
+        key: 3b66c416-51ba-47a7-8626-37c0ec7e38e9
+        locale: zh-cn
+        version: 1.0.0
+        title: Histograms
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### Histograms
+
+          For continuous variables, you can see how they are distributed with a histogram. A histogram is a bar plot where a variable is binned into ranges, then counted up in each bin. Histograms are simple to create with most data visualization software.
+        instructor_notes: ''
+        resources: null
+      - id: 214415
+        key: 1ca4a98c-441c-48f7-8436-d686b077f5ca
+        locale: zh-cn
+        version: 1.0.0
+        title: Histogram
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/October/57f3d9a6_histogram/histogram.png'
+        width: 2000
+        height: 1500
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214416
+        key: 7997d300-5832-4744-91e4-645f4db07f5b
+        locale: zh-cn
+        version: 1.0.0
+        title: Non-normal distributions and histograms
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: 'Histograms are great at showing outliers and displaying how the data is distributed. Also, not all variables you collect will be normally distributed! You can make incorrect conclusions by assuming [normality](http://oureverydaylife.com/normality-mean-statistics-31977.html).'
+        instructor_notes: ''
+        resources: null
+      - id: 214417
+        key: 61cf12e9-e8ba-43a0-8c84-3fa53d26c739
+        locale: zh-cn
+        version: 1.0.0
+        title: Non Normal Histogram
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/October/57f3da1c_histogram-nonnormal/histogram-nonnormal.png'
+        width: 2000
+        height: 954
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214418
+        key: 5ee8999f-d6b1-4906-b6fc-1f1af2d608aa
+        locale: zh-cn
+        version: 1.0.0
+        title: Scatter plots
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### Scatter plots
+
+          You can look at relationships between variables with scatter plots. This will help you identify variables that are correlated or have other interesting relationships. You've seen this graph before, but I'm going to show this graph again below. 
+
+          This scatter plot is showing the relationship between height and weight for a group of men. It's pretty clear that weight increases as height increases, in general. This is what we should expect of course, taller people are typically heavier too!
+        instructor_notes: ''
+        resources: null
+      - id: 214419
+        key: 85e97440-5384-4bc3-9867-4f1a3049e87c
+        locale: zh-cn
+        version: 1.0.0
+        title: Scatter plot example
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b39d51_dot-example/dot-example.png'
+        width: 1000
+        height: 800
+        caption: Scatter plot of height vs weight for a group of men.
+        resources: null
+        instructor_notes: null
+      - id: 214420
+        key: 808fb5ec-3b52-45f7-9b5d-b5ffd882733d
+        locale: zh-cn
+        version: 1.0.0
+        title: Explanatory visualizations
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: '### Explanatory visualizations'
+        instructor_notes: ''
+        resources: null
+      - id: 214421
+        key: ee0d0a4e-5872-41a9-831d-6eb529b5082e
+        locale: zh-cn
+        version: 1.0.0
+        title: Share
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/October/57f3da44_share/share.png'
+        width: 1389
+        height: 229
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214422
+        key: c59fb09e-a32d-45a3-97e0-5b7aa608d7d4
+        locale: zh-cn
+        version: 1.0.0
+        title: Part 4
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          The final part is where you look deeper into patterns you found during the EDA process and share them with people. This is the explanatory part. I like to think of it as telling stories with data. You actually create a narrative to lead your viewers through your analysis. Your job here is to facilitate a conversation between your data and your readers.
+
+          Interactivity can be very powerful, it allows your reader explore the data themselves. Check out this [interactive dashboard](https://public.tableau.com/en-us/s/gallery/tale-100)! Play with it a bit, think about how the interactivity enhances the visualization.
+        instructor_notes: ''
+        resources: null
+  - id: 215364
+    key: 254bc7e6-d96a-466b-b3c8-fe0a89118f25
+    locale: zh-cn
+    version: 1.0.0
+    title: Visualization design
+    semantic_type: Concept
+    updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 214423
+    atoms:
+      - id: 214423
+        key: cdf72f8e-205a-47a9-94ef-fb663e2f8f8c
+        locale: zh-cn
+        version: 1.0.0
+        title: 'Visualization design '
+        semantic_type: VideoAtom
+        updated_at: 'Fri Nov 18 2016 06:07:31 GMT+0000 (UTC)'
+        is_public: true
+        tags: []
+        instructor_notes: ''
+        resources: null
+        video:
+          youtube_id: TTGYKv5Qta0
+          transcodings:
+            uri_480p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/October/57f7ed72_nd008-ud1006-l1-outro/nd008-ud1006-l1-outro_480p.mp4'
+            uri_480p_1000kbps_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/October/57f7ed72_nd008-ud1006-l1-outro/nd008-ud1006-l1-outro_480p_1000kbps.mp4'
+            uri_480p_ogg: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/October/57f7ed72_nd008-ud1006-l1-outro/nd008-ud1006-l1-outro_480p.ogg'
+            uri_720p_mp4: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/October/57f7ed72_nd008-ud1006-l1-outro/nd008-ud1006-l1-outro_720p.mp4'
+            uri_hls: 'http://video.udacity-data.com.s3.amazonaws.com/topher/2016/October/57f7ed72_nd008-ud1006-l1-outro/hls/playlist.m3u8'

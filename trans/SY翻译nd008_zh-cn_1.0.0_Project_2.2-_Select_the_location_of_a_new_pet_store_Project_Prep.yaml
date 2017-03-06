@@ -1,0 +1,159 @@
+id: 215516
+key: 3225a518-6215-40e3-9522-170155994285
+locale: zh-cn
+version: 1.0.0
+title: 项目准备
+semantic_type: Lesson
+updated_at: 'Fri Nov 18 2016 06:07:34 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: ''
+duration: 15
+is_project_lesson: true
+_concepts_ids:
+  - 215221
+  - 215223
+  - 215222
+_project_id: null
+concepts:
+  - id: 215221
+    key: 8ccf456f-3346-4982-b3d1-14d853bdbd27
+    locale: zh-cn
+    version: 1.0.0
+    title: 项目概览
+    semantic_type: Concept
+    updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 214103
+    atoms:
+      - id: 214103
+        key: 4f123fd0-f945-4951-b89e-5abaf9b3a85d
+        locale: zh-cn
+        version: 1.0.0
+        title: 概览
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## 项目概览
+
+          这个项目是2.1的延续，试图寻找最好的城市来扩大Pawdacity的新宠物店。
+
+          ### 场景
+
+          Pawdacity是一家领先的宠物商店连锁，在怀俄明州有13家商店并遍及全州。 今年，Pawdacity想扩大并开设第14家店。 您的经理已要求您执行分析，根据预测的年销售额推荐Pawdacity所开设最新商店的城市。
+
+          #### 如何完成此项目？
+
+          该项目使用在“多变量线性回归”课程中学习的技能。完成此项目：
+
+          * 回顾课程
+          * 应用在课程中学习的技能来解决项目详细信息部分中给出的业务问题。 
+          * 使用我们的指南和标准来帮助您构建项目。
+          * 准备好后，请使用支持资料部分中提供的提交模板将其提交给我们审核。
+
+          #### 技能需求
+
+          为了完成这个项目，你必须能够:
+
+          * [选择适当的预测变量](https://classroom.udacity.com/nanodegrees/nd008/parts/3d606c26-cb8e-43af-9199-7e3577aa3392/modules/480be91f-5f4f-4a36-bbe7-a3fd9d383124/lessons/3a709787-3aa0-4b4e-941d-cdbf1408c09e/concepts/28aebfa2-68a0-4125-b4a6-5183b0f0e415#)
+          * [分析相关性](https://classroom.udacity.com/nanodegrees/nd008/parts/3d606c26-cb8e-43af-9199-7e3577aa3392/modules/480be91f-5f4f-4a36-bbe7-a3fd9d383124/lessons/3a709787-3aa0-4b4e-941d-cdbf1408c09e/concepts/0f5850d4-07c2-4f98-a239-c5660856daf3#) 在预测变量之间
+          * [构建线性模型](https://classroom.udacity.com/nanodegrees/nd008/parts/c0b53068-1239-4f01-82bf-24886872f48e/modules/bf705147-0d7c-4492-842a-698a6410a8a3/lessons/4e33b70a-72a4-47cb-959a-28632ae6aaff/concepts/50223fb9-0a0a-4672-ba4c-deef74ebcc19#)
+        instructor_notes: ''
+        resources: null
+  - id: 215223
+    key: d0d7a7b2-c9be-4c9b-afe9-a655ad841c7d
+    locale: zh-cn
+    version: 1.0.0
+    title: 项目详细信息
+    semantic_type: Concept
+    updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 214104
+    atoms:
+      - id: 214104
+        key: dfcd9f11-9508-48e4-bbfe-4e073fe85e46
+        locale: zh-cn
+        version: 1.0.0
+        title: 细节
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ### 业务问题
+
+          Pawdacity是一家领先的宠物商店连锁，在怀俄明州有13家商店并遍及全州。 今年，Pawdacity想扩大并开设第14家店。 您的经理已要求您执行分析，根据预测的年销售额推荐Pawdacity所开设最新商店的城市。
+
+          在第一部分中，您已经清理了数据集并处理异常值。 
+
+          在此项目中，您将使用您清理的数据集，并使用此数据集来训练线性回归模型以预测销售额。 
+
+          这里是你在选择正确城市的标准:
+
+          1. 新的商店应该位于一个新的城市。 这意味着新城市中不应有现有的商店。
+          2. 在新城市的整个竞争的总销售应该少于50万美元。
+          3. 您想要建立新商店的新城市必须有超过4000人的人口（根据2014年美国人口普查估计）。
+          4. 预测的年销售额必须超过20万美元。
+          5. 所选城市的预测销售额最高。
+
+          ### 完成项目的步骤
+
+          #### 步骤1：构建线性回归模型
+
+          分析您在Project 2.1中创建的数据集，并查看数据的分布。 您可以创建直方图来查看每个连续和分类数据，以确定正在使用的数据的性质。
+
+          **重要：** 确保你处理了异常值，并从你的训练集中删除了一个城市。 在开始建模数据集之前，您应该有** 10行**的数据。
+
+          构建线性回归模型以帮助您预测总销售额。
+
+          #### 步骤2：执行分析
+
+          使用您的回归模型来计算所有城市的预测销售额，并使用建议给您的标准。
+        instructor_notes: ''
+        resources: null
+  - id: 215222
+    key: 416b8634-5e21-4b3e-a8a2-babee04542d8
+    locale: zh-cn
+    version: 1.0.0
+    title: 支持材料
+    semantic_type: Concept
+    updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
+    is_public: true
+    resources:
+      files:
+        - name: 提交模板
+          uri: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/September/57d965ff_p2.2-submission-template/p2.2-submission-template.docx'
+      google_plus_link: null
+      career_resource_center_link: null
+      coaching_appointments_link: null
+      office_hours_link: null
+    _atoms_ids:
+      - 214105
+    atoms:
+      - id: 214105
+        key: 77810187-5bd4-4bc4-8d22-527457b03e94
+        locale: zh-cn
+        version: 1.0.0
+        title: 回顾
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ### 回顾
+
+          使用 [project rubric](https://review.udacity.com/#!/rubrics/381/view) 来回顾你的项目. 如果您对提交的内容感到满意，那么您就可以提交您的项目了。 如果您看到需要改进的余地，请继续努力改进您的项目。
+
+          ### 提交模板
+
+          使用本节底部的提交模板提交项目。 填写完毕后，将其另存为PDF并在下一部分提交PDF。
+
+          #### 数据
+
+          请参阅项目2.1中的支持材料部分以访问完成此项目所需的数据。
+        instructor_notes: ''
+        resources: null

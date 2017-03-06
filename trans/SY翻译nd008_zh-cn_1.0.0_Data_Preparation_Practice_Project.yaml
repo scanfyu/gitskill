@@ -1,0 +1,749 @@
+id: 215511
+key: 475e82a0-785e-4f8e-97a8-1dd9bca10f24
+locale: zh-cn
+version: 1.0.0
+title: 实践项目
+semantic_type: Lesson
+updated_at: 'Fri Nov 18 2016 06:07:34 GMT+0000 (UTC)'
+is_public: true
+image: null
+video: null
+summary: null
+duration: 75
+is_project_lesson: false
+_concepts_ids:
+  - 215187
+  - 215188
+  - 215189
+  - 215190
+  - 215191
+  - 215192
+  - 215193
+_project_id: null
+concepts:
+  - id: 215187
+    key: d1475899-056d-4064-b759-d7a5f2ecc41c
+    locale: zh-cn
+    version: 1.0.0
+    title: 实践项目介绍
+    semantic_type: Concept
+    updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 214022
+    atoms:
+      - id: 214022
+        key: c0c09719-3f09-4732-afbb-5782c4f44f74
+        locale: zh-cn
+        version: 1.0.0
+        title: 来自课程老师的贴士
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ## 来自课程老师的贴士
+
+          大家好！这里是Sam（记住，你的老师之一）。下一节包括一个练习项目，可以帮助您评估将要提交审核的实际项目的准备情况。这里不单单可以提交这个项目，您可以通过查看解决方案样例：一个Alteryx解决方案工作流程和/或详细的工作过程。
+
+          祝你好运!
+
+          山姆和马克
+        instructor_notes: ''
+        resources: null
+  - id: 215188
+    key: 7ca73747-b3f5-4306-a6fc-422ea46acc45
+    locale: zh-cn
+    version: 1.0.0
+    title: 实践课程详情
+    semantic_type: Concept
+    updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
+    is_public: true
+    resources:
+      files:
+        - name: DistrictA Attendance
+          uri: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/October/57ffd701_districta-attendance/districta-attendance.csv'
+        - name: DistrictA Finance
+          uri: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/October/57ffd711_districta-finance/districta-finance.csv'
+        - name: DistrictB Attendance
+          uri: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/October/57ffd71c_districtb-attendance/districtb-attendance.csv'
+        - name: DistrictB Finance
+          uri: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/October/57ffd727_districtb-finance/districtb-finance.csv'
+      google_plus_link: null
+      career_resource_center_link: null
+      coaching_appointments_link: null
+      office_hours_link: null
+    _atoms_ids:
+      - 214023
+    atoms:
+      - id: 214023
+        key: 47db2144-3cf5-4535-8eed-e0eed32c4ebb
+        locale: zh-cn
+        version: 1.0.0
+        title: 项目介绍
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |
+          ## 实践项目2.1 - 准备学校数据
+          如往常一样，我们从问题解决框架开始
+
+          #### 商业问题理解
+          学区希望通过一些有关学校的高度精简的数据集来预测学校中每个学生的费用。 通过这样一个模型的预测，学校将可以对相对成本的管理有一个较好的估计。 您被要求完成相关模型的数据准备工作。
+          #### 数据理解
+          这几份CSV文件中包含了两个不同校区之间的数据。你可以在本页底部找到这些文件。
+
+          * DistrictA_Attendance - 该文件包含A区25所学校的平均每日出勤率，出勤百分比和学生-教师比。
+          * DistrictA_Finance - 该文件包含A区25所学校的教师月薪以及学生平均成本数据。
+          * DistrictB_Attendance - 该文件包含了B区21所学校的平均日出勤率，出勤半分比以及学生-教师百分比数据。
+          * DistrictB_Finance - 该文件包含了B区21所学校的教师平均工资和学生的平均成本数据。
+
+          #### 数据准备
+
+          ##### 第一步：整合数据
+          第一步，你需要将来自不同文件的数据合并为一个工作表-每个学校一行。为此，你需要使用在数据形式化和数据混合课程中所学到的技能。
+
+          ##### 第二布：清理数据
+          下一步，你将要清理数据，这包括了处理重复数据、丢失数据以及其他数据问题。为此，你需要使用在数据问题课程中所学到的技能
+
+          ##### 第三步：识别并处理异常值
+          最后，你将要查找异常值，并确定解决它们的办法。为此，你需要使用你在数据问题课程中所学到的技能。
+
+          ### 自我评估
+          尽你自己全力来完成该实践项目。一旦你做完了，或者卡住了看一看解决方案。我们提供了解决方案数据集、 Alteryx 工作集，以及如何完成该项目的步骤。这里并没有一个最为完美的答案。
+        instructor_notes: ''
+        resources: null
+  - id: 215189
+    key: ab612688-3f13-44a2-9a21-825960c28483
+    locale: zh-cn
+    version: 1.0.0
+    title: 项目解决方案
+    semantic_type: Concept
+    updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
+    is_public: true
+    resources:
+      files:
+        - name: Practice P2 Solution Workflow
+          uri: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/October/58002ce0_practice-p2-solution-workflow/practice-p2-solution-workflow.yxmd'
+        - name: 'Cleaned School Data '
+          uri: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/October/58002f12_school-data-cleaned/school-data-cleaned.xlsx'
+      google_plus_link: null
+      career_resource_center_link: null
+      coaching_appointments_link: null
+      office_hours_link: null
+    _atoms_ids:
+      - 214024
+      - 214025
+      - 214026
+    atoms:
+      - id: 214024
+        key: 5143054c-88de-447e-a404-6ba982bd9bfc
+        locale: zh-cn
+        version: 1.0.0
+        title: 方案
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### 自我评估资源
+
+          你有三个资源来评估你在实践项目中的表现，以及你将要提交的项目作业的准备情况。
+
+          ##### 解决方案数据集
+          在本页底部，你将看到 **清理后学校数据** 文件。 这里有少量的判断调用来处理相关的异常值和缺失值，因此，你的解决方案看起来可能会有所不同。观察一下，并同你清理过的数据集进行比较。
+          
+          ##### Alteryx 解决工作流程
+          在本页底部，你将会看到一个 Alteryx 工作流程，它提供了一个示例解决方案。你的方案可能看起来和它不完全一样。参考一下我们制作的解决方案看看我们是如何达成这个方案的。你也可以看一下底部工作流的快照。别担心，它并不复杂。
+        instructor_notes: ''
+        resources: null
+      - id: 214025
+        key: a35dc6d3-570f-4028-a726-9defe3b2cfb4
+        locale: zh-cn
+        version: 1.0.0
+        title: 快照
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/October/5801609f_workflow-snapshot/workflow-snapshot.png'
+        width: 1469
+        height: 550
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214026
+        key: 3c8b95a3-9eb1-4308-b22e-987262e40789
+        locale: zh-cn
+        version: 1.0.0
+        title: 实现路径
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ##### 详细实现路径
+
+          请看下一页-它提供了一个更加的详细的过程。你可以学习如何使用评分工具，这将使得模型结果的应用更加简便。
+        instructor_notes: ''
+        resources: null
+  - id: 215190
+    key: 7c8f1fff-f8f4-4b04-9c34-753f0b226a1f
+    locale: zh-cn
+    version: 1.0.0
+    title: 数据理解
+    semantic_type: Concept
+    updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 214027
+      - 214028
+      - 214029
+      - 214030
+      - 214031
+      - 214032
+      - 214033
+      - 214034
+      - 214035
+    atoms:
+      - id: 214027
+        key: 8a9eec15-29ad-4841-8cf4-a8fa39888bb8
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### 数据理解
+
+          首先，让我们来看看数据。数据是4个不同的csv文件，我们必须将他们结合起来以便于分析。
+        instructor_notes: ''
+        resources: null
+      - id: 214028
+        key: a5c56efa-f07d-413b-87c1-4455c61d7f9a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581c9d99_files/files.png'
+        width: 143
+        height: 90
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214029
+        key: 9d4e852b-488c-4f13-8c02-5d6eee93a619
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: '导入时，我们将引入导入工具，每个输入工具代入其中一个文件。每个区域将有两个文件：考勤文件（attendance file）和财务文件（finance file）。 '
+        instructor_notes: ''
+        resources: null
+      - id: 214030
+        key: f3a79892-95ea-4514-8928-4e4b8ae5f7e8
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581c9fd6_import/import.png'
+        width: 152
+        height: 345
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214031
+        key: fb665811-a7f9-4f96-9f9f-ffd027790a8e
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: '从A区的考勤文件开始，每一个记录对应一个学校，这里有三个数字字段：平均出勤率、出勤率和学生-教师比。'
+        instructor_notes: ''
+        resources: null
+      - id: 214032
+        key: d6a71aeb-e6c3-4359-a2a7-45e8f7c1b87d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581c9edb_attendancea/attendancea.png'
+        width: 447
+        height: 98
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214033
+        key: 402ca0c1-76f3-4fc5-9086-74157a5b3a26
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: A区的财务标签格式互不相同。每个学校有多行，这是由于数字字段堆叠在彼此的顶部。
+        instructor_notes: ''
+        resources: null
+      - id: 214034
+        key: b5585478-4734-4466-ba4b-20a2ec5c348b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581c9eee_financea/financea.png'
+        width: 313
+        height: 116
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214035
+        key: d4d98138-ff74-4660-b09b-d3ba5e7a2e7a
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: B区的两个数据集结构类似。
+        instructor_notes: ''
+        resources: null
+  - id: 215191
+    key: adfabd00-1a3f-46fc-96a7-b2e7cce2da52
+    locale: zh-cn
+    version: 1.0.0
+    title: 结构化数据与数据混合
+    semantic_type: Concept
+    updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 214036
+      - 214037
+      - 214038
+      - 214039
+      - 214040
+      - 214041
+      - 214042
+      - 214043
+      - 214044
+      - 214045
+      - 214046
+      - 214047
+      - 214048
+    atoms:
+      - id: 214036
+        key: 8a728060-9eca-4939-9319-53ff0bbad2b2
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### 数据格式化与数据混合
+
+          为了建立数据集，我们将会把这些数据集合并成一个数据集。
+          * 首先，我们将转换财务数据集。
+          * 其次，我们将合并每个区的财务和考勤数据集。
+          * 并且，最后我们将把两个地区的数据合并起来。
+
+          #### 使用Crosstab转换
+
+          要转换财务数据集，请将Crosstab工具连接到每个财务输入工具。 
+        instructor_notes: ''
+        resources: null
+      - id: 214037
+        key: 048d0779-a2b6-4e7c-8672-4442f54313d2
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581ca570_crosstab/crosstab.png'
+        width: 148
+        height: 352
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214038
+        key: 58c9c389-6cb2-41aa-877b-357af1aba86e
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: '在配置窗口中，选择School作为组值，量值作为列标题，并以此作为新列的值。这将以考勤数据格式相同的方式来对数据以格式化 '
+        instructor_notes: ''
+        resources: null
+      - id: 214039
+        key: c06094f7-ae9e-4cfa-b605-a67a8c82a222
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581ca88b_crosstab-configuration/crosstab-configuration.png'
+        width: 328
+        height: 434
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214040
+        key: 56c888f2-76ec-45f1-84f7-7b37796bf660
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### 连接
+
+          接下来，引入连接工具并连接这两个数据集。
+        instructor_notes: ''
+        resources: null
+      - id: 214041
+        key: 19734647-23de-427d-9a43-caa0aa71ce0b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581ca5bc_join/join.png'
+        width: 224
+        height: 350
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214042
+        key: a11e71ad-3558-4542-9fbb-fe24c87863b4
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: '在配置窗口中，选择加入每个数据集中的学校变量。然后，选择你想要保留的变量。你可以删除其中一个学校变量，但是你应该保留5个数字变量。你也会想为其他地区做同样的事情。'
+        instructor_notes: ''
+        resources: null
+      - id: 214043
+        key: 33b6a55b-d5bc-4a4e-a911-e6f0bd1e3d95
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581caa08_join-config/join-config.png'
+        width: 361
+        height: 500
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214044
+        key: b87729fb-5504-4020-8469-41c5453c903b
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### 连接
+
+          下一步，引入一个连接工具，这将会把数据堆叠在彼此的顶部。由于数据集具有相同的变量，因此您不必配置任何变量。 
+        instructor_notes: ''
+        resources: null
+      - id: 214045
+        key: 17449fc3-e812-459c-b645-bfd35f004388
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581ca689_union/union.png'
+        width: 382
+        height: 416
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214046
+        key: 31fbfe36-1740-4b8e-9b02-687918ee5378
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: '由于变量名都很长，因而这是重命名变量的一个好时机。为此，先加入一个选择工具。我已经把名字改为ATT、PATT、PTR、SAL和PPC。让我们加上一个浏览工具看一看我们得到了什么。现在的数据格式看起来很适合分析和建模。'
+        instructor_notes: ''
+        resources: null
+      - id: 214047
+        key: 7f8c84ae-a972-4cb2-b981-2c04106a4543
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581ca78c_cleaned-data-pic/cleaned-data-pic.png'
+        width: 436
+        height: 164
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214048
+        key: da32456d-ef84-41b5-8069-dc04e6af7897
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: '许多分析师此刻将会把数据集输出，未来的数据清理时会更快一点。在本例中，因为我们没有那么多数据因而不那么重要。但是，想象一下有数百万记录的数据集，单单运行它就需要花费大量时间。'
+        instructor_notes: ''
+        resources: null
+  - id: 215192
+    key: 2131fac6-a776-42e9-9e5d-0cf322a6ce0b
+    locale: zh-cn
+    version: 1.0.0
+    title: 数据清理
+    semantic_type: Concept
+    updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 214049
+      - 214050
+      - 214052
+      - 214051
+      - 214053
+      - 214054
+      - 214055
+      - 214056
+      - 214057
+      - 214058
+      - 214059
+    atoms:
+      - id: 214049
+        key: 0713d8ba-9415-43ec-aa86-841414081ce6
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          ### 数据清理
+          现在，让我们检查一下数据问题。具体来说，让我们首先来看一下重复和丢失数据。
+
+          #### 使用字段摘要以可视化
+          可视化数据是一个很好的方法。字段摘要报告提供了几个有用的报告。查看每个变量的直方图将会是一个很好的方法。
+        instructor_notes: ''
+        resources: null
+      - id: 214050
+        key: 1c0fd769-be34-4380-8fb8-b39bee032608
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581caf38_field-summary-tool/field-summary-tool.png'
+        width: 332
+        height: 81
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214052
+        key: 9e835280-6687-4e6a-89ba-01c960aadfdd
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581caf44_field-summary-results/field-summary-results.png'
+        width: 870
+        height: 421
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214051
+        key: 8a5ee240-7156-4dc7-8dcf-d44b05ffa340
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          #### 重复数据
+
+          首先，我们看到一个潜在的重复数据，因为一个学校有了两个记录。让我们观察一下来确认是否重复。两个记录的所有数据都是相同的，因此它看起来是重复的。所以，让我们来删除一个观察值。 
+
+          有几种方法可以做到这一点。一种简单的方法是使用选择记录工具。我们想要删除的记录是39，因此在配置窗口中使用选择记录工具，我们可以选择1-38和40以后的所有。
+        instructor_notes: ''
+        resources: null
+      - id: 214053
+        key: 1adf22be-fc29-4d69-b59d-d2ce56ce602f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581cb05e_select-records/select-records.png'
+        width: 284
+        height: 77
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214054
+        key: 439e23c2-a1a1-4814-ac34-089bd6a5402d
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: '我们要删除的记录是39，因此在配置窗口选择记录工具，我们可以选择1-38和40之后的所有。'
+        instructor_notes: ''
+        resources: null
+      - id: 214055
+        key: 99bd979a-8f90-4f09-a0d9-1322b9d394cc
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581cb06f_select-records-config/select-records-config.png'
+        width: 361
+        height: 239
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214056
+        key: f3cf2825-ed09-48ed-8018-4264deb0a5b3
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |-
+          #### 缺失数据
+          你可以看到字段摘要报告中我们所缺少的几个观察值-两个考勤变量（直方图下方红色标出）。我们可以删除或插补。因为数量较少，所以我们选择删除记录；但是我们会记录下它，因为我们可能会使用这些数据来运行模型，或者我们最终在模型中不使用这些数据。
+
+          一个简单的方法来删除缺失值是使用过滤器工具。
+        instructor_notes: ''
+        resources: null
+      - id: 214057
+        key: 9252169d-0c23-4e41-a296-3fb4d36b8a25
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581cb156_filter-tool/filter-tool.png'
+        width: 434
+        height: 115
+        caption: ''
+        resources: null
+        instructor_notes: null
+      - id: 214058
+        key: 1abf3227-a9a6-44e5-80b3-5a612c232f2f
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: '在配置窗口中，你可以选择ATT变量，并过滤掉值为空（NULL）的记录。为此，您将希望保留所有非空记录，所以，你可以使用下拉列表选择ATT为非空（Not NULL）或者键入公式 *!IsNull(ATT)。'
+        instructor_notes: ''
+        resources: null
+      - id: 214059
+        key: cd3077aa-7167-4ac3-a3fb-0d3eff6c6a69
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: ImageAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        url: 'https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581cb163_filter-config/filter-config.png'
+        width: 366
+        height: 346
+        caption: ''
+        resources: null
+        instructor_notes: null
+  - id: 215193
+    key: d55bb021-9b56-47c2-8eb9-40b24e854d0c
+    locale: zh-cn
+    version: 1.0.0
+    title: 异常值
+    semantic_type: Concept
+    updated_at: 'Fri Nov 18 2016 06:07:33 GMT+0000 (UTC)'
+    is_public: true
+    resources: null
+    _atoms_ids:
+      - 214060
+    atoms:
+      - id: 214060
+        key: 5f170882-4ffb-456d-a984-ced9e1621cb0
+        locale: zh-cn
+        version: 1.0.0
+        title: null
+        semantic_type: TextAtom
+        updated_at: 'Fri Nov 18 2016 06:07:30 GMT+0000 (UTC)'
+        is_public: true
+        text: |+
+          ### 识别并处理异常值
+
+          *在以后的部分中我们会提供更多的细节。这里，我们将简单概述。*
+
+          让我们从一些将预测变量和目标变量的关系来刻画散点图以检查异常值。由于有4
+
+          Let’s start with attendance. The box and whisker plots on either axis use the interquartile range to determine whether a point is an outlier. You can see hear there are two dramatic outliers for attendance, so let’s address those first, then come back to the others.. If you need a quick refresher on what to do with outliers, take a look at the notes below the video. 
+
+          For these outliers, it looks like the data may not be record properly. Let’s look at the observations by attaching a sort tool and browse tool to the dataset. You can see that almost every observation has a decimal, and these two observations seem to be about 10X the average, so it’s highly likely that the data is an error and we should divide by 10. Normally we would validate with the source, but for now we’ll just make the assumption. I’ll use a formula tool to filter out these records, and create another scatter plot.
+
+          **ATTENDANCE**: There still is one more outlier. For this one, it seems like the data is probably right, and it’s just a larger school. My concern with keeping this observation is that it may skew the data, creating or masking a relationship with PPC.  If I knew that none of the schools I was predicting for were going to be that size, I’d delete it. Otherwise, I’d keep it in. Let’s plan on building a model with and without this variable.
+
+          **PERCENT ATTENDANCE**: Now let’s look at percent attendance. There doesn’t appear to be outliers. Great.
+
+          **PUPIL TEACHER RATIO**: For Pupil Teacher Ratio, there are 2 outliers, which are the also outliers for PPC. This makes sense since we’d expect the relationship to behave this way. Based on the fitted line, the outliers are in line with the relationship, so we’d leave them in.
+
+          **TEACHER SALARIES**: Two records are outliers, with very low salaries. Just like for PTR, these seem to be in line with the trend, and not dramatically different, so it’s probably best to keep them in.
+
+          NOTE: In this example, because of the small size of the dataset, we could look at each outlier and make decisions. For larger data sets, you’d likely have to make more systematic decisions, such as removing all outliers, or removing the top 1 or 2 percent of observations for each variable.
+
+          #### Outlier Summary 
+          So, we kept 4 of the 5 outliers, and we’ll run the model with and without the fifth one. So now we are ready for modeling. Nice work.
+
+          ##### How do deal with outliers
+
+          As a reminder, let’s quickly review how to handle an outlier. There are three main methods: 
+          1. Delete: When data is erroneous or when the outlier hurts the model's’ ability to make prediction (perhaps the value is very unlikely to appear again so keeping it in the model will skew all other predictions).
+          2. Impute: Also for when data is erroneous, we could use the average or median value in its place.
+          3. Leave it: If the data is good data, it may be best to leave the data in and try with and without to see the difference.
+
+        instructor_notes: ''
+        resources: null

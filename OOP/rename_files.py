@@ -5,7 +5,7 @@ def rename_files():
     file_list = os.listdir(r"F:\OOP\prank")
     print(file_list)
 
-    save_path = os.getcwd() # 测试目前工作目录
+    save_path = os.getcwd() #测试目前工作目录
     print("Current Working Directory is "+save_path)
     os.chdir(r"F:\OOP\prank")
 
